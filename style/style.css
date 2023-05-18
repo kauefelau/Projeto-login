@@ -9,7 +9,6 @@
 
 body {
     background-color: rgb(95, 27, 95);
-    font-size: 0.9em;
 }
 
 main {
@@ -50,16 +49,47 @@ section {
 
 .content h1 {
     text-align: center;
+    margin-bottom: 10px;
 }
+
+.content p {
+    font-size: 0.8em;
+}
+
 
 /* Formulario */
 
-input {
-    margin-top: 3px;
-    margin-bottom: 3px;
+form .campo {
+    background-color: #5f2c82;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
 }
 
 
+.campo i {
+    color: #fff;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo input {
+    background-color: rgb(214, 255, 249);
+    font-size: 1em;
+    width: calc(100% - 44.4px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+
+    transform: translateY(-10px);
+    padding: 4px;
+}
+
+.campo input:focus-within {
+    background-color: white;
+    border: 0px;
+}
 /* Enviar o formulario */
 
 #submit {
@@ -73,17 +103,32 @@ input {
     cursor: pointer;
 }
 
+#submit:hover {
+    background-color: rgb(123, 220, 205);
+    color: rgb(63, 133, 125);
+}
+
 #forgot-pass a {
-    margin-top: 4px;
+    margin-top: 5px;
     display: block;
     width: 100%;
     text-align: center;
     line-height: 40px;
     background-color: #fff;
-    border: 1px solid rgb(63, 133, 125);
+    border: 1px solid rgb(113, 212, 200);
     border-radius: 5px;
     color: rgb(84, 173, 159);
     text-decoration: none;
+}
+
+#forgot-pass {
+    position: relative;
+}
+
+#mail {
+    position: absolute;
+    top: 7px;
+    padding-left: 4px;
 }
 
 #forgot-pass a:hover {
