@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* configuracoes para tablets */
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    body {
+        background: linear-gradient(to bottom, rgb(95, 27, 95), rgb(81, 185, 185)) no-repeat;
+        background-size: 100vw 100vh;
+    }
+
+    section {
+        width: 90vw;
+    }
+
+    #img {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    .content {
+        float: right;
+        width: 70%;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    body {
+        background: linear-gradient(to bottom, rgb(95, 27, 95), rgb(81, 185, 185)) no-repeat;
+        background-size: 100vw 100vh;
+    }
+    section {
+        width: 70vw;
+
+    }
+
+    #img {
+        float: left;
+        width: 50%;
+        height: 100%;
+
+    }
+
+    .content {
+        float: right;
+        width: 50%;
+    }
+
+    #contain p {
+        text-align: center;
+    }
+}
